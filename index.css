@@ -24,6 +24,7 @@
 
 @layer components {
   button {
+    @apply py-2 px-4 bg-primary rounded-md text-white font-bold;
     transition: 300ms ease-in;
   }
   button:hover {
@@ -33,7 +34,7 @@
     @apply text-[1.7em] leading-tight font-extrabold uppercase italic text-primary text-center;
   }
   .h3 {
-    @apply relative text-[1.4em] leading-tight font-bold w-fit mx-auto italic  text-center before:w-[110%] before:h-[200%] text-white before:absolute before:bg-primary before:left-[-5%] before:top-[-50%] before:-z-10 before:skew-x-[-45deg];
+    @apply relative text-[1.4em] leading-tight font-bold w-fit mx-auto italic  text-center before:w-[calc(100%+6rem)] before:h-[200%] text-white before:absolute before:bg-primary before:left-1/2 before:-translate-x-1/2 before:top-[-50%] before:-z-10 before:skew-x-[-45deg];
   }
 }
 
